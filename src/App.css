@@ -38,6 +38,22 @@ header {
   width: 60%;
   margin: 12px auto;
   text-align: start;
+  cursor: pointer;
+}
+
+.line span {
+  font-size: 12px;
+  display: none;
+  float: right;
+  color: grey;
+}
+
+.line:hover {
+  background-color: #e9e6e6;
+}
+
+.line:hover span {
+  display: inline;
 }
 
 main {

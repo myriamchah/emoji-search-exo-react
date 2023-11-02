@@ -1,9 +1,15 @@
 const Line = ({ title, symbol }) => {
   return (
     <>
-      <div className="line">
+      <button
+        className="line"
+        onClick={() => {
+          navigator.clipboard.writeText(symbol);
+        }}
+      >
         {symbol} {title}
-      </div>
+        <span>Copy me!</span>
+      </button>
     </>
   );
 };
